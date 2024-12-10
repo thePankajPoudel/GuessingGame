@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.between {
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+
+.number {
+  font-size: 6rem;
+  width: 12rem;
+  height: 12rem;
+  background: #fff;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  gap: 2rem;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.guess {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  font-size: 1.8rem;
+  background: #ff6f61;
+  color: #fff;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: #ff4a3d;
+}
+
+.btn.again {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #4caf50;
+}
+
+.btn.again:hover {
+  background: #3e8e41;
+}
+
+.message {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  min-height: 3rem;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.label-highscore {
+  font-weight: 600;
+}
+
+.right {
+  text-align: left;
+}
+
+.number.correct {
+  background: #60b347;
+  color: #fff;
+}
+
+body.success {
+  background: linear-gradient(135deg, #28a745, #6adbdb);
+}
